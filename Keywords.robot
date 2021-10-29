@@ -86,5 +86,4 @@ Click SubCategory
     Wait Until Element Is Visible    ${${CategoryName}}
     Click Category    ${CategoryName}
     Wait Until Element Is Visible    ${${SubCategoryName}}
-    Click Element    ${${SubCategoryName}}    
-
+    Click Element    ${${SubCategoryName}}  
