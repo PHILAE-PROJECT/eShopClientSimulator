@@ -1,0 +1,59 @@
+Select Featured Product
+    [Arguments] ${ProductName}
+    #same as select product but asserts that we are on the homepage
+​
+#WISHLIST
+​
+Add Product To Wish List
+    #Add a product to the wishlist
+    [Arguments] ${ProductName}
+​
+​
+#LOGIN
+Access Register From the Header
+    #Click on register from the header via the MyAccount Button
+    #Home :  My Account > Register
+​
+Login From the Header
+    #Click on Login from the header via the MyAccount Button
+    # Home : My Account > Login
+​
+Fill Register
+    #fill the personal details from the register account screen
+    #index.php?route=account/register : fill the details
+​
+Fill Returning Customer
+    #fill email adress and password from the login screen
+    #index.php?route=account/login : fill email adress and password
+​
+​
+Access Register from Login Screen
+    #click on continue (new customer) from the login screen
+    #http://eshopdemo.smartesting.com/index.php?route=account/login > click continue
+​
+#CART
+Update Quantity
+    [Arguments] ${ProductName}
+    #when the cart contains at least one article
+    #http://eshopdemo.smartesting.com/index.php?route=checkout/cart > update quantity , quantity + "refresh arrow"
+​
+Remove From Cart
+    [Arguments] ${ProductName}
+    #delete a product from cart
+    #http://eshopdemo.smartesting.com/index.php?route=checkout/cart
+​
+​
+#Checkout
+​
+New Customer Register Account Checkout
+    #http://eshopdemo.smartesting.com/index.php?route=checkout/checkout
+    #select Register account and cl
+    ick continue
+​
+New Customer Guest Checkout
+    #http://eshopdemo.smartesting.com/index.php?route=checkout/checkout
+    #select Guest account and click continue
+​
+Returning Customer Checkout
+    #http://eshopdemo.smartesting.com/index.php?route=checkout/checkout
+    #Fill the adress and password fields for a returning customer
